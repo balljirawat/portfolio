@@ -1,0 +1,50 @@
+.certificate {
+  width: 100vw;
+  height: calc(100vh - 70px);
+  scroll-snap-align: start;
+  overflow: hidden;
+  background-color: #15023a;
+}
+
+.each-slide div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  width: 780px;
+  height: calc(100vh - 70px);
+  margin: 0 auto;
+  background-color: white;
+}
+
+@media screen and (max-width: 900px) {
+  .slide-container {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+
+    padding-bottom: 40px;
+  }
+  .each-slide div {
+    width: 90vw;
+    margin: 10px auto;
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .slide-container {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+
+    padding-bottom: 40px;
+  }
+  .each-slide div {
+    width: 90vw;
+    margin: 10px auto;
+    height: 300px;
+  }
+}

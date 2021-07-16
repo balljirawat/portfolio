@@ -1,0 +1,50 @@
+.about {
+  background-color: white;
+  width: 100vw;
+  height: calc(100vh - 70px);
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.container div {
+  font-size: 20px;
+}
+
+.container h1 {
+  margin-bottom: 20px;
+  font-size: 50px;
+  font-weight: 700;
+  color: #15023a;
+}
+.text {
+  margin-bottom: 20px;
+  color: #15023a;
+}
+.text span {
+  color: white;
+  font-weight: 700;
+
+  background-color: red;
+  box-shadow: 2px 2px 1px black;
+}
+
+@media screen and (max-width: 480px) {
+  .about {
+    padding-right: 10px;
+  }
+  .container div {
+    font-size: 15px;
+  }
+  .container h1 {
+    font-size: 30px;
+  }
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
